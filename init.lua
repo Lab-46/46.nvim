@@ -65,7 +65,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { 'neoclide/coc.nvim', branch = 'release'},
+  { 'neoclide/coc.nvim', branch = 'release' },
   'kvrohit/rasmus.nvim',
   'nvim-treesitter/nvim-treesitter',
   'tpope/vim-commentary',
@@ -75,9 +75,11 @@ require("lazy").setup({
     dependencies = { { 'nvim-lua/plenary.nvim' } }
   },
   {
-    "ur4ltz/surround.nvim",
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
     config = function()
-      require"surround".setup { mappings_style = "surround" }
+      require("nvim-surround").setup()
     end
   },
   {
