@@ -87,7 +87,14 @@ require("lazy").setup({
     version = "*",
     dependencies = { "nvim-tree/nvim-web-devicons" }
   },
-  "nvim-lualine/lualine.nvim"
+  "nvim-lualine/lualine.nvim",
+  {
+    "ggandor/leap.nvim",
+    dependencies = { "tpope/vim-repeat" },
+    config = function()
+      require('leap').add_default_mappings(true)
+    end
+  }
 })
 
 --    ____      _                
