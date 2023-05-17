@@ -94,6 +94,14 @@ require("lazy").setup({
     config = function()
       require('leap').add_default_mappings(true)
     end
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require('gitsigns').setup({
+        current_line_blame = true
+      })
+    end
   }
 })
 
@@ -133,6 +141,7 @@ require'nvim-treesitter.configs'.setup {
 
 vim.api.nvim_set_keymap("n", "<leader>.", "<Plug>(coc-codeaction)", {})
 vim.api.nvim_set_keymap("n", "gd", "<Plug>(coc-definition)", {silent = true})
+vim.api.nvim_set_keymap("n", "gr", "<Plug>(coc-references)", {silent = true})
 vim.api.nvim_set_keymap("n", "K", ":call CocActionAsync('doHover')<CR>", {silent = true, noremap = true})
 vim.api.nvim_set_keymap("n", "<leader>rn", "<Plug>(coc-rename)", {})
 vim.api.nvim_set_keymap("n", "<leader>f", ":CocCommand prettier.formatFile<CR>", {noremap = true})
