@@ -66,7 +66,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   'nvim-treesitter/nvim-treesitter',
-  'nvim-lualine/lualine.nvim',
   'tpope/vim-commentary',
   { 'neoclide/coc.nvim',   branch = 'release' },
   { 'kvrohit/rasmus.nvim', priority = 200 },
@@ -208,27 +207,5 @@ require("nvim-tree").setup {
   },
   filters = {
     dotfiles = true,
-  },
-}
-
---   _                _ _
---  | |   _   _  __ _| (_)_ __   ___
---  | |  | | | |/ _` | | | '_ \ / _ \
---  | |__| |_| | (_| | | | | | |  __/
---  |_____\__,_|\__,_|_|_|_| |_|\___|
-
-require('lualine').setup {
-  options = {
-    icons_enabled = true,
-    section_separators = { left = '', right = '' },
-    globalstatus = false
-  },
-  sections = {
-    lualine_a = {},
-    lualine_b = { 'branch' },
-    lualine_c = { 'filename' },
-    lualine_x = {},
-    lualine_y = { 'location' },
-    lualine_z = {}
   },
 }
