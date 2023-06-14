@@ -105,6 +105,7 @@ require('lazy').setup({
     event = 'VeryLazy'
   },
   'lukas-reineke/indent-blankline.nvim',
+  'petertriho/nvim-scrollbar'
 })
 
 --    ____      _
@@ -231,3 +232,18 @@ require('nvim-tree').setup {
 require('indent_blankline').setup {
   space_char_blankline = ' ',
 }
+
+--              _                                    _ _ _                
+--   _ ____   _(_)_ __ ___        ___  ___ _ __ ___ | | | |__   __ _ _ __ 
+--  | '_ \ \ / / | '_ ` _ \ _____/ __|/ __| '__/ _ \| | | '_ \ / _` | '__|
+--  | | | \ V /| | | | | | |_____\__ \ (__| | | (_) | | | |_) | (_| | |   
+--  |_| |_|\_/ |_|_| |_| |_|     |___/\___|_|  \___/|_|_|_.__/ \__,_|_|   
+
+require("scrollbar").setup({
+  handle = {
+    blend = 0
+  },
+  handlers = {
+    cursor = false
+  }
+})
