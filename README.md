@@ -35,6 +35,7 @@ git clone git@github.com:Lab-46/46.nvim.git ~/.config/nvim
 
 **Screenshots**
 
-![CleanShot 2023-05-12 at 17 18 14@2x](https://github.com/Lab-46/46.nvim/assets/19674362/cbae8836-d3af-4b8a-be1f-25a81ef24991)
+![July 05 11 50](https://github.com/Lab-46/46.nvim/assets/19674362/f690e835-51bd-4cf1-bf15-e83e069b56ed)
 
-Font: [Fira Code](https://github.com/tonsky/FiraCode) • Terminal: [Kitty](https://sw.kovidgoyal.net/kitty) • Language: [TypeScript](https://www.typescriptlang.org/)
+
+Font: [Berkeley Mono](https://berkeleymono.com) • Terminal: [Kitty](https://sw.kovidgoyal.net/kitty) • Language: [TypeScript](https://www.typescriptlang.org/)
