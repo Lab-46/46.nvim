@@ -4,7 +4,6 @@ A Neovim configuration
 
 Plugins
 
-- [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [coc.nvim](https://github.com/neoclide/coc.nvim)
@@ -14,6 +13,8 @@ Plugins
 - [surround.nvim](https://github.com/ur4ltz/surround.nvim)
 - [vim-commentary](https://github.com/tpope/vim-commentary)
 - [vim-repeat](https://github.com/tpope/vim-repeat)
+- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar)
 
 **Installation**
 
