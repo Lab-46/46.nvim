@@ -179,6 +179,14 @@ vim.keymap.set('n', '<C-P>', telescope_builtin.find_files, {})
 vim.keymap.set('n', '<C-F>', telescope_builtin.live_grep, {})
 vim.keymap.set('n', '<C-B>', telescope_builtin.buffers, {})
 
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    if vim.fn.argv(0) == "" then
+      require("telescope.builtin").find_files()
+    end
+  end,
+})
+
 --              _                 _
 --   _ ____   _(_)_ __ ___       | |_ _ __ ___  ___
 --  | '_ \ \ / / | '_ ` _ \ _____| __| '__/ _ \/ _ \
