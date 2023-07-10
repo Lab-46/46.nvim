@@ -76,8 +76,9 @@ require('lazy').setup({
   'nvim-treesitter/nvim-treesitter',
   'tpope/vim-commentary',
   { 'neoclide/coc.nvim',   branch = 'release' },
+  'kvrohit/rasmus.nvim',
   {
-    'kvrohit/rasmus.nvim',
+    'projekt0n/github-nvim-theme',
     lazy = false,
     priority = 1000
   },
@@ -114,8 +115,8 @@ require('lazy').setup({
 --  | |__| (_) | | (_) | |  \__ \
 --   \____\___/|_|\___/|_|  |___/
 
-vim.cmd.colors('rasmus')
-vim.o.background = 'dark'
+vim.cmd.colors('github_light_colorblind')
+vim.o.background = 'light'
 
 --   _____                   _ _   _
 --  |_   _| __ ___  ___  ___(_) |_| |_ ___ _ __
