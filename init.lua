@@ -26,7 +26,7 @@ vim.o.splitright = true
 vim.o.swapfile = false
 vim.o.tabstop = 2
 vim.o.termguicolors = true
-vim.o.wrap = false
+vim.o.wrap = true
 vim.opt.fillchars = { eob = ' ' }
 vim.o.hidden = true
 vim.o.backup = false
